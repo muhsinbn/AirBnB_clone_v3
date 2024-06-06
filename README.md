@@ -1,12 +1,15 @@
 # AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+The RESTFUL API is third version the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of the AirBnB-clone RESTful API is to replicate the functionalities of the original AirBnB platform in a customized and independent environment. It aims to provide developers with a set of endpoints and resources that mimic the behavior of the AirBnB API, allowing them to build applications with similar features such as property listing, reservation management, user profiles, reviews, messaging, and payment processing. The AirBnB-clone RESTful API enables developers to develop their own version of a property rental platform that utilizes the same principles and design patterns as the original AirBnB platform.
 
 #### Functionalities of this command interpreter:
-* Create a new object (ex: a new User or a new Place)
-* Retrieve an object from a file, a database etc...
-* Do operations on objects (count, compute stats, etc...)
-* Update attributes of an object
-* Destroy an object
+* Listing properties: Users can search for and view available properties on AirBnB.
+* Making reservations: Users can book and manage reservations for properties.
+* Viewing reviews and ratings: Users can read reviews and ratings of properties from previous guests.
+* Managing user profile: Users can update their profiles, add payment methods, and view booking history.
+* Communicating with hosts: Users can send messages to hosts, ask questions about properties, and coordinate check-in details.
+* Searching for properties: Users can search for properties based on location, price, amenities, and other criteria.
+* Handling payments: Users can process payments for reservations and manage payment information.
+* Managing notifications: Users can receive and manage notifications about bookings, messages, and other updates. 
 
 ## Table of Content
 * [Environment](#environment)
@@ -19,25 +22,23 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [License](#license)
 
 ## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+This project is interpreted/tested on Ubuntu 20.04 LTS using python3 (version 3.4.3)
 
 ## Installation
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
-* Access AirBnb directory: `cd AirBnB_clone`
-* Run hbnb(interactively): `./console` and enter command
-* Run hbnb(non-interactively): `echo "<command>" | ./console.py`
+* Clone this repository: `git clone "https://github.com/muhsinbn/AirBnB_clone_v3.git"`
+* Access AirBnb directory: `cd AirBnB_clone_v3`
 
 ## File Descriptions
-[console.py](console.py) - the console contains the entry point of the command interpreter. 
-List of commands this console current supports:
-* `EOF` - exits console 
-* `quit` - exits console
-* `<emptyline>` - overwrites default emptyline method and does nothing
-* `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
-* `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file). 
-* `show` - Prints the string representation of an instance based on the class name and id.
-* `all` - Prints all string representation of all instances based or not on the class name. 
-* `update` - Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file). 
+[api](app.py) - API contain specific commands, options, and parameters that can be used to interact with different functionalities or services. Some common components that an API  contain for a command-line interpreter include:. 
+
+* `Endpoints`- Defined URLs that accept incoming requests and return responses with data or actions. 
+* `Request methods:` - HTTP methods such as GET, POST, PUT, DELETE, PATCH that indicate the type of operation being performed on the resource.
+* `Parameters:` - Data that can be submitted along with the request to customize the operation or filter results.
+* `Response:` - Data or actions returned by the API in response to a request, typically in JSON or XML format.
+* `Authentication` - Mechanisms for verifying the identity of the user or application making the API calls to ensure security.
+* `Rate limiting` - Restrictions on the number of requests that can be made to the API within a certain time period to prevent abuse and ensure fair usage.
+* `Documentation:` -  Detailed information on how to use the API, including endpoints, request formats, response formats, authentication methods, and usage examples.
+* `Error handling` - Guidelines on how errors are communicated and how developers can handle and troubleshoot issues encountered while using the API.
 
 #### `models/` directory contains classes used for this project:
 [base_model.py](/models/base_model.py) - The BaseModel class from which future classes will be derived
@@ -154,9 +155,9 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+Mohammed Yahaya - [Github](https://github.com/muhsinbnbn) / [Twitter](https://twitter.com/muhad_2020)  
+Christian Chukwudi - [Github](https://github.com/chudistar01) / [Twitter](https://twitter.com/)
 
-Second part of Airbnb: Joann Vuong
+
 ## License
 Public Domain. No copy write protection. 
